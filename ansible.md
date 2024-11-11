@@ -21,3 +21,9 @@ Red Hat bought it in  2015.
 - Security & Compliance
 - Orchestration
 
+
+
+For Linux - SSH
+For Windows - WinRM
+
+
