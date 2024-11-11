@@ -13,3 +13,11 @@ Red Hat bought it in  2015.
 - Tiny Learning Curve
 
 
+## Ansible Use Cases:
+- Provisioning
+- Configuration Management
+- App Deployment
+- Continous Delivery
+- Security & Compliance
+- Orchestration
+
