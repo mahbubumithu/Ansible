@@ -6,3 +6,10 @@ Funded in 2013
 
 Red Hat bought it in  2015.
 
+## Why Ansible ?
+- No agent
+- Idempotent
+- Declarative Not Procedural
+- Tiny Learning Curve
+
+
