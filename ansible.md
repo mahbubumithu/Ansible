@@ -57,6 +57,21 @@ Playbook Example:
       service: name=httpd state=started enabled=yes
 ...
 
+Modules:
+2000 modules provided by Ansible to automate every part of the environment.
+
+Modules are like plugins.
+
+There are lots of modules such as--
+Service, file, copy, iptables etc.
+
+Any Module can be used as --
+
+ansible 127.0.0.1 -m service -a "name=httpd state=started"
+ansible localhost -m ping
+
+
+
 
 
 
