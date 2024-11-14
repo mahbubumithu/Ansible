@@ -16,10 +16,13 @@ Red Hat bought it in  2015.
 ## Ansible Use Cases:
 - Provisioning
 - Configuration Management
+
 - App Deployment
 - Continous Delivery
 - Security & Compliance
 - Orchestration
+
+
 
 
 
@@ -36,6 +39,25 @@ By default the inventory is described by a configuration file, whose deafult loc
 The configuration file lists either the IP address or hostname of each node that is accessible by Ansible.
 
 The inventory file can be in one of many formats such as yaml, INI etc.
+
+
+Playbook contains Plays
+Plays contain tasks
+Tasks call modules
+
+Playbook Example:
+
+---
+- hosts: web
+  remote_user root
+  tasks:
+    - name: ensure apache is at the latest version
+      yum: name=httpd state=latest
+    - name: ensure apache is running
+      service: name=httpd state=started enabled=yes
+...
+
+
 
 
 
