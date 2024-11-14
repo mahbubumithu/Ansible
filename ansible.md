@@ -71,6 +71,19 @@ ansible 127.0.0.1 -m service -a "name=httpd state=started"
 ansible localhost -m ping
 
 
+Ansible is agentless. So we do not need to install any software on the servers that are to be managed. It does require Python runtime on the servers are a SSH server on remote hosts.
+
+Ansible supports both push and pull modes. So we can execute Ansible code from a central control machine to make changes on remote machines or the remote machines can pull configuration from a well defained source periodically.
+
+Code for Ansible is written in YAML.
+
+Ansible Architecture
+- Control Node
+- Managed Nodes
+- Inventory
+- Modules
+- Tasks
+- Playbooks
 
 
 
