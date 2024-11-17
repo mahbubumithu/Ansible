@@ -40,6 +40,7 @@ The configuration file lists either the IP address or hostname of each node that
 
 The inventory file can be in one of many formats such as yaml, INI etc.
 
+- A list of managed nodes.
 
 Playbook contains Plays
 Plays contain tasks
@@ -57,7 +58,10 @@ Playbook Example:
       service: name=httpd state=started enabled=yes
 ...
 
-Modules:
+## Modules:
+
+Ansible modeules are reusable, stanalone scripts that can be used by the Ansible API or by the ansible or ansible-playbook programs
+
 2000 modules provided by Ansible to automate every part of the environment.
 
 Modules are like plugins.
@@ -77,7 +81,7 @@ Ansible supports both push and pull modes. So we can execute Ansible code from a
 
 Code for Ansible is written in YAML.
 
-Ansible Architecture
+## Ansible Architecture
 - Control Node
 - Managed Nodes
 - Inventory
@@ -85,6 +89,7 @@ Ansible Architecture
 - Tasks
 - Playbooks
 
+Windows machine can not use as a control node.
 
 
 
